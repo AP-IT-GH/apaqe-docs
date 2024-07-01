@@ -16,7 +16,7 @@
   * [Notification]
 * [AI Development]
 * [Deployment](deployment/README.md)
-  * [Ansible]
+  * [Ansible](deployment/Ansible.md)
   * [WireGaurd]
   * [Containerisation]
   * [Monitoring]
@@ -24,11 +24,10 @@
   * [How to deploy]
 * [SensorBox](sensorbox/README.md)
   * [Solar Power Manager]
-   * [Analysis]
-   * [Board]
+  * [Analysis]
+  * [Board]
   * [Sensor Box]
-   * [Board]
-   * [Sensors]
+  * [Board]
+  * [Sensors]
 * [Project Methodology]
   * [Method]
-

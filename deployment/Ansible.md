@@ -21,6 +21,15 @@ The main ansible playbook will do the following:
 * create the traefik network
 * run docker compose up
 
+### Running the playbooks
+
+```
+RUN THIS PLAYBOOK: ansible-playbook FLWSB-backend-ansible.yaml --ask-vault-pass
+-K -> ask become password (root)
+optional: add -v, -vv or -vvv to increase verbosity (more logs, handy when troubleshooting)
+
+```
+
 ## Vault
 
 Ansible Vault is a feature of ansible that allows you to keep sensitive data such as passwords or keys in encrypted files, rather than as plaintext in playbooks or roles. These vault files can then be distributed or placed in source control.

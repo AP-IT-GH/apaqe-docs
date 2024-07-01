@@ -19,7 +19,7 @@
   * [Ansible](deployment/Ansible.md)
   * [WireGaurd]
   * [Containerisation]
-  * [Monitoring]
+  * [Monitoring](deployment/Monitoring.md)
   * [Gateway configuration]
   * [How to deploy]
 * [SensorBox](sensorbox/README.md)

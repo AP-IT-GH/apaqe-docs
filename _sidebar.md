@@ -11,7 +11,7 @@
   * [Mosquitto]
   * [SensorMonitor]
     * TTN
-    * Local MQTT
+    * [Local MQTT](sync-ding/README.md)
   * [Authentication]
   * [Notification]
 * [AI Development]

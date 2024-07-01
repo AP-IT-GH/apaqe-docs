@@ -5,7 +5,7 @@ There will be 2 playbooks, 1 is the **checkmk-server** which will be to set up t
 
 *[Here](https://www.liquidweb.com/blog/secure-server/) is help on how to secure a server for serving as a checkmk-server.*
 
-the other playbook is for all devices that need to be monitored, this is called an agent. installing this should automatically add the device to the main checkmk server.
+the other playbook is for all servers/systems that need to be monitored, this is called an agent. installing this should automatically add the device to the main checkmk server.
 
 *Please note that setting the variables correct, according to your infrastructure, is always necessary.*
 

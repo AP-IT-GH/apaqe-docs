@@ -1,0 +1,1 @@
+# The repo containing all the documentation about the power manager board

@@ -12,8 +12,8 @@
   - [SensorMonitor]
     - TTN
     - Local MQTT
-  - [Traefik](backend/traefik/traefik.md)
-  - [Authentication](backend/authentication/authentication.md)
+  - [Traefik](backend/traefik.md)
+  - [Authentication](backend/authentication.md)
   - [Notification]
 - [AI Development]
 - [Deployment](deployment/README.md)

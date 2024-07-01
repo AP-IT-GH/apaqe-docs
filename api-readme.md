@@ -2,6 +2,43 @@
 
 When testing make sure db/other endpoints in routes are available otherwise temporarily comment out the routes you dont need.
 
+## Features
+- **VPN Management:** Create, delete, and manage WireGuard VPN gateways.
+- **Sensor Data Handling:** Collect and analyze sensor data across various metrics.
+- **Sensor Adding:** Adding new sensors to the postgresdb.
+
+## Installation and Setup
+
+### Prerequisites
+- Python 3.8 or newer
+- Docker (container deployment)
+
+### Getting Started
+1. **Install dependencies:**
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+2. **Environment Setup:**
+   - Copy the `.env.example` to `.env` and modify it to suit your environment settings.
+
+3. **Run the application:**
+   ```bash
+   uvicorn main:app --reload  # Development mode
+   uvicorn main:app --host 0.0.0.0 --port 8000  # Production mode
+   ```
+
+## Usage
+
+### Starting the Server
+Run the following command to start the server:
+```bash
+uvicorn main:app --reload
+```
+
+### API Endpoints
+Each endpoint is documented with its purpose, required parameters, and example responses.
+
 ## Endpoints
 
 ### Root
@@ -284,10 +321,3 @@ When testing make sure db/other endpoints in routes are available otherwise temp
 - **Required:** ```notification_id: int```
 - **Returns:** ```{"msg": "done"}```
 
-## Setup
-
-1. Install Python (if not already installed).
-2. Clone this repository.
-3. Go to ```/src/fastapi/```
-3. Install the required packages: `pip install -r requirements.txt`
-4. Start the FastAPI application: `uvicorn main:app --reload` or `uvicorn main:app  --reload --host 0.0.0.0` 

@@ -4,7 +4,7 @@
 - Efficiency: WireGuard is lightweight and requires fewer resources, leading to better performance, especially on less powerful hardware.
 - Configuration: WireGuard is often easier to configure and manage. Using static IP addresses and fixed keys can be simpler than setting up OpenVPN’s extensive settings.
 - Kernel Integration: WireGuard is integrated into the Linux kernel, making it easier to install and use on Linux systems.
-- Point to point 
+- Very good for point to point connection.  
 ## WGeasy 
 ### The Utility of WG-Easy in Our Project
 WG-Easy is an invaluable tool for simplifying the management of WireGuard VPN servers.  In our project, we leverage the WG-Easy API to enhance our custom web user interface, resulting in a streamlined and user-friendly experience for managing our wireguard.

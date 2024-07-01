@@ -1,6 +1,6 @@
 # Traefik
 
-We have replaced Nginx with Traefik as our reverse proxy solution. Traefik is a modern, open-source reverse proxy and load balancer that is designed to work seamlessly with containerized applications.
+We have replaced Nginx with Traefik as our reverse proxy solution. Traefik is a modern, open-source reverse proxy and load balancer that is designed to work with containerized applications.
 
 #### Why Traefik?
 

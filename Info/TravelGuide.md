@@ -2,7 +2,7 @@
 
 Als je dit leest wilt dit waarschijnlijk zeggen dat je het internationaal Zanzibar project gaat doet, dit document zal je wat info geven omtrent wat je kan verwachten en wat je zeker zal nodig hebben
 
-Dit project zal zeker een 'belevenis' zijn maar met de juiste groep zal dit eerder aanvoelen als een vakantie. 
+Dit project zal zeker een 'belevenis' zijn maar met de juiste groep zal dit eerder aanvoelen als een vakantie.
 Het kan de eerste dagen even een shock zijn maar laat het even bekomen en je zal snel merken dat het best wel een goede ervaring is.
 
 ## Wat is er aanwezig
@@ -34,6 +34,7 @@ het huis is eigenlijk 2 huizen  op elkaar, verbonden met een trap - beetje als e
 * handdoeken (zowel voor zee als douche)
 * keukenhanddoeken
 * the usual (douche stuff, kleren, ...)
+  * enkele lange broeken voor op KIST (of toch 3/4)
 * ZIP bags (grote) - dit is voor je eten (beestjes)
 * keukenrol + WC papier
 * anti-muggen stuff (best aangeraden zowel muggenspray met DEET 50 als electronische muggenstekker)
@@ -56,21 +57,93 @@ het huis is eigenlijk 2 huizen  op elkaar, verbonden met een trap - beetje als e
   * aangeraden om veel EI te eten - eerder vegetarisch dus
     * er is op de main road een eierboer - goedkoper als in de markets
 * vervoer prijzen
-  * stone town 	- mbweni road (afstanden van ong 5km) = 10k schilling - 15k voor ons is goede prijs
+  * stone town 	- mbweni road (afstanden van ong 5km) = 10k TZS -- 15k TZS voor ons is goede prijs
   * tuk tuk 		- 1 km = 500 schilling ongeveer (dan heb je goede prijs)
-  * dala dala 	- 500 schilling om van huis naar
+  * dala dala 	- 500 TZS
 * dolfijn zwemmen - 37$ de man (met eten bij - lunch is vis of vegetarisch)
 * safari - **nog in te vullen**
-* eten op restaurant - dit zal rond de 5-12$ de man zijn (13'000 - 30'000)
-
-## Codes
-
-CCTV wachtwoord 	= unv-123456
-
-wifi wachtwoord 	= adamhussein2277
+* eten op restaurant - dit zal rond de 5-12$ de man zijn (13'000 - 30'000TZS)
+* eten van mama
+  * Best eens 1x in de week ofso met Hamis naar de markt gaan en grote inkopen doen zoals 5kg bloem bijvoorbeeld
+  * 30'000 voor 13 mensen (zowel middag als avondeten) **moet nog herbekeken worden**
+* Elektriciteit zit niet mee in de prijs van het huis - 30'000 TZS per 100KWH per verdiep
+  * meestal zal beneden verdiep elektriciteit sneller op gaan
+* Water (pak van 6x 1,5L) = 3'500-4'000 TZS -- bidon van 18L = 5'000 TZS (moeilijk uit te gieten)
 
 ## Huisvrouw - Mama
 
-## Namen
+Deze dame zit mee in de prijs van het huisje. Je moet gewoon vragen als je wilt dat ze iets voor je doet. (ze kan moeilijk lezen en geen engels, gebruik google translate en luidspreker)
 
-Hamis = security guard
+Zij zal het volgende doen:
+
+* afwas
+* poetsen
+* kleren wassen
+
+Zij kan ook koken maar dan zal je wel moeten bij betalen, dit is wel goedkoper als uit eten gaan.
+Het is echter aangeraden om geen vlees te eten of enkel **Boneless beef. De kip was zeer questionable.**
+
+**En vraag voor veel saus, anders kan het zijn dat je niet gaat toekomen voor iedereen.**
+
+### Eten
+
+De huisvrouw kan redelijk goed koken maar je moet zeggen wat je wilt anders kookt ze niet. Je kan altijd aan de security guard vragen of ze het kan maken of niet. 
+
+Het is aangeraden om een lijst van eten op te zetten voor de hele week, bespreek dit met de security guard, en dan betaal je hem dag op dag. Hij zal de overschot van de ene dag bij de andere gebruiken.
+
+Hier zijn enkele items die ze goed kan maken:
+
+* fruit juice
+* brood
+* chapati (pannekoek brood)
+* rice curry
+* rice tomato
+
+#### Tips
+
+Je zal makelijk aan brood geraken maar beleg is een probleem, het is daarom aangeraden om bij voorkeur een pot nutela ofso mee te nemen. Zo niet zal je in groep zelf iets moeten verzinnen.
+
+## Warning - info
+
+* internet on campus & thuis is traag - dus download alles wat je nodig zou kunnen hebben op voorhand
+* kleren niet snachts buiten laten hangen - kan gestolen worden
+* deuren altijd op slot doen als iedereen weg gaat - security guard heeft sleutel van trap deur en poort
+* limiteer elektriciteit verbruik - gaat redelijk snel op
+* ga met zoveel mogelijk mensen 1x per week water kopen - iedereen draagt 2 handen vol
+* verwacht niet dat er asfalt wegen zijn, er zijn er wel maar niet overal.
+  * neem daarom schoenen mee die zeker vuil mogen zijn en die off-road terein aankunnen
+  * het gaat er wel degelijk warm zijn dus hou dit in gedachte
+
+## **Contacten**
+
+**Hamis 		= security guard		= +255 683 577 133 (enkel sms in swahili)**
+
+**Dr. Kamis 	= directie van KIST		= +255 778 001 880 (engels ok)**
+
+**Dr. Omar 		= SIM + prof KIST		= +255 65 530 6183 (engels ok)**
+
+**Dr. Zuhura	= directie KIST		= +255 773 795 414 (engels ok)**
+
+**Maryam Omar= prof KIST			= +255 773 633 506 (engels ok)**
+
+**Mr Juma		= prof van KIST 		= +255 773 470 403 (engels matig)**
+
+**Mr. Ali		= prof van het lab		= +255 778 395 610 (engels matig)**
+
+**Youssouf		= prof & tour guide	= +255 777 165 656 (engels ok)**
+
+**Tom Peeters	= AP prof			= +32 497 50 14 81**
+
+**TAXI ali = +255 719 307 872 (7p)**
+
+**TAXI hadj = +255 779 872 526 (bevindt zich in stonetown) (6p)**
+
+## **Codes**
+
+**CCTV wachtwoord 	= unv-123456**
+
+**wifi wachtwoord 	= adamhussein2277**
+
+## **Videos**
+
+**[YouTube channel](https://www.youtube.com/@APAQE2024)**

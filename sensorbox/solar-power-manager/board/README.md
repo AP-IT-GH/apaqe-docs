@@ -3,3 +3,6 @@
 
 # Schematic
 <img src="sensorbox/solar-power-manager/board/images/schematic.png" alt="3d image of the power board" width="100%" height="auto">
+
+# Block diagram
+<img src="sensorbox/solar-power-manager/board/images/block-diagram.png" alt="3d image of the power board" width="100%" height="auto">

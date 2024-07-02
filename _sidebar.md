@@ -7,7 +7,7 @@
   * [API]
   * [Database]
     * [InfluxDB]
-    * [PostgrSQL]
+    * [PostgrSQL](postgres/README.md)
   * [Mosquitto]
   * [SensorMonitor]
     * TTN

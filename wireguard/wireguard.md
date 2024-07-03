@@ -30,7 +30,7 @@ This section outlines how to integrate WG-Easy's API with your custom web interf
 - A Client Device to connect to the VPN (We'll refer to this as Client B)
 - WG-Easy installed and configured on Server A (refer to WG-Easy documentation for installation)
 - Basic understanding of API calls and web development
-- PORTS !!
+- open ports 51820 (udp) en 51821 (tcp)
 
 ## Steps:
 1. setup WG-easy:

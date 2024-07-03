@@ -9,9 +9,8 @@
     * [InfluxDB]
     * [PostgrSQL]
   * [Mosquitto]
-  * [SensorMonitor]
-    * TTN
-    * [Local MQTT](sync-ding/README.md)
+  * [Sensor Bridge](backend/sensor-bridge/README.md)
+    * [Mock Data Generator](backend/sensor-bridge/mock-data-generator.md)
   * [Authentication]
   * [Notification]
 * [AI Development]

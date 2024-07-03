@@ -1,12 +1,23 @@
-# MQTT data synchroniser
+# Sensor Bridge
+## Goal
+## How is this achieved
+> Add design diagram 
+## How to use/replicate
+## Detail explanation 
 
 ### Content
+> Dit is niet nodig, er is een instelling die dit automatisch genereerd
+
+> Gebruik ook de juiste niveaus
 1. [Usecase](#usecase)
 2. [Allowed Keys](#allowed-keys)
 3. [Env variabels](#env-variabels)
 4. [Debug mode](#debug-mode)
 
 ### Usecase
+
+
+> Dit stukje tekst is ineens te gedetaileerd. Het is zeer moeilijk te volgen. Betere intro nodig. Indien nodig gooi uw tekst door chatgpt.
 
 This docker container connects an MQTT broker with an lnfluxDB. It subscribes to the given `MQTT_DATA_TOPIC` or to the default topic `data`.
 It expects any JSON structure that contains a `device_id` key where the value is an int and the other keys have to be one of the allowed keys (see below).
@@ -119,5 +130,7 @@ example:
     "debug_mode": true,
 }
 ```
+
+> Waarom niet de standaard tools van mosquitto? Leg ook uit hoe je dit doet? 
 
 When debugging you can use an [mqtt cli tool](https://mqttx.app/cli) to subscribe to the debug topics.

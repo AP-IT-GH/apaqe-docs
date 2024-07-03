@@ -30,6 +30,13 @@ optional: add -v, -vv or -vvv to increase verbosity (more logs, handy when troub
 
 ```
 
+### Virtual machine IP adresses
+
+* zanzimonitor: 195.201.31.19
+* zanzi-test-2: 195.201.37.58
+* zanzi-test-3: 188.34.197.214
+* main server flwsb: 94.130.179.123
+
 ## Vault
 
 Ansible Vault is a feature of ansible that allows you to keep sensitive data such as passwords or keys in encrypted files, rather than as plaintext in playbooks or roles. These vault files can then be distributed or placed in source control.

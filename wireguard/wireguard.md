@@ -4,7 +4,7 @@
 - Efficiency: WireGuard is lightweight and requires fewer resources, leading to better performance, especially on less powerful hardware.
 - Configuration: WireGuard is often easier to configure and manage. Using static IP addresses and fixed keys can be simpler than setting up OpenVPN’s extensive settings.
 - Kernel Integration: WireGuard is integrated into the Linux kernel, making it easier to install and use on Linux systems.
-- Very good for point to point connection.  
+- Encrypted point to point connection between VM and gateway.  
 ## WGeasy 
 ### The Utility of WG-Easy in Our Project
 WG-Easy is an invaluable tool for simplifying the management of WireGuard VPN servers.  In our project, we leverage the WG-Easy API to enhance our custom web user interface, resulting in a streamlined and user-friendly experience for managing our wireguard.
@@ -20,3 +20,30 @@ In our project, we use WG-Easy’s API to manage and monitor our WireGuard VPN s
 
 - API Calls: We make API calls to WG-Easy to perform various tasks such as adding or removing clients. (see documentation API)
 - Custom Web Interface: The data and functionality provided by WG-Easy’s API are integrated into our custom web interface. (see documantation Frontend)
+
+# Project Implementation with WG-Easy
+This section outlines how to integrate WG-Easy's API with your custom web interface for managing the WireGuard VPN server.
+
+## Prerequisites:
+
+- A Server with internet access (We'll refer to this as Server A)
+- A Client Device to connect to the VPN (We'll refer to this as Client B)
+- WG-Easy installed and configured on Server A (refer to WG-Easy documentation for installation)
+- Basic understanding of API calls and web development
+- PORTS !!
+
+## Steps:
+1. setup WG-easy:
+Use the [documentation](https://github.com/wg-easy/wg-easy/blob/master/README.md) to run WG-Easy. 
+
+Requirements
+- A host with a kernel that supports WireGuard (all modern kernels).
+- A host with Docker installed
+
+We do not use the interface of wg easy directly because it raises some security issues. Moreover, it is more convenient to put this along in the general dashboard. 
+
+We use fastAPi to create routes that we can call at the frontend, which in turn calls the wg-easy api. If we didn't do it this way we would run into problems with CORS. Besides, this is also clearer and easier to work with. 
+
+2. Configure Server A (frontend dashboard):
+
+Within the interface on the dashboard, create a new "Client" by just entering the name of the new gateway. Now you can see the IP address, the name and the gateway ID. 

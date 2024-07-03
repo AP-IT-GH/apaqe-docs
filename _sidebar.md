@@ -17,7 +17,7 @@
 * [AI Development]
 * [Deployment](deployment/README.md)
   * [Ansible]
-  * [WireGaurd]
+  * [WireGaurd](wireguard/wireguard.md)
   * [Containerisation]
   * [Monitoring]
   * [Gateway configuration]

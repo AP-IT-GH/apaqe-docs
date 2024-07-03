@@ -29,5 +29,11 @@
   - [Sensor Box]
   - [Board]
   - [Sensors]
-- [Project Methodology](projectmethodology/README.md)
-  - [Method]
+- [Managing the project](projectmethodology/README.md)
+  - [Tools Used](projectmethodology/toolsused.md)
+  - [Methodologies Employed](projectmethodology/methodologiesemployed.md)
+  - [Teamwork Dynamics](projectmethodology/teamworkdynamics.md)
+  - [Reflection Moments](projectmethodology/reflectionmoments.md)
+  - [Meeting Insights](projectmethodology/meetinginsights.md)
+  - [Keys to Effective Teamwork](projectmethodology/keystoeffectiveteamwork.md)
+  - [Lessons from Mistakes](projectmethodology/lessonsfrommistakes.md)

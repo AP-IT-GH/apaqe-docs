@@ -19,7 +19,7 @@ Key Benefits of Using WG-Easy
 In our project, we use WG-Easy’s API to manage and monitor our WireGuard VPN servers. Here’s how we integrate it:
 
 - API Calls: We make API calls to WG-Easy to perform various tasks such as adding or removing clients. (see documentation API)
-- Custom Web Interface: The data and functionality provided by WG-Easy’s API are integrated into our custom web interface. (see documantation Frontend)
+- Custom Web Interface: The data and functionality provided by WG-Easy’s API are integrated into our custom web interface. (see documentation Frontend)
 
 # Project Implementation with WG-Easy
 This section outlines how to integrate WG-Easy's API with your custom web interface for managing the WireGuard VPN server.

@@ -1,10 +1,14 @@
 # WireGuard
-## why wireguard
+## Why WireGuard
 - Speed: WireGuard is generally faster than OpenVPN due to the efficient and modern cryptography it uses. This results in lower latency and higher throughput speeds.
 - Efficiency: WireGuard is lightweight and requires fewer resources, leading to better performance, especially on less powerful hardware.
 - Configuration: WireGuard is often easier to configure and manage. Using static IP addresses and fixed keys can be simpler than setting up OpenVPN’s extensive settings.
 - Kernel Integration: WireGuard is integrated into the Linux kernel, making it easier to install and use on Linux systems.
 - Encrypted point to point connection between VM and gateway.  
+
+### Why we need WireGuard
+We use WireGuard for set up a secure vpn tunnel between devices. In this case we use WireGuard for the communication between the gateways and a server/VM. 
+
 ## WGeasy 
 ### The Utility of WG-Easy in Our Project
 WG-Easy is an invaluable tool for simplifying the management of WireGuard VPN servers.  In our project, we leverage the WG-Easy API to enhance our custom web user interface, resulting in a streamlined and user-friendly experience for managing our wireguard.

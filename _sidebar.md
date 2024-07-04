@@ -30,7 +30,9 @@
   - [Board]
   - [Sensors]
 - [Managing the project](projectmethodology/README.md)
+
   - [Tools Used](projectmethodology/toolsused.md)
+  - [The logbook](projectmethodology/thelogbook.md)
   - [Methodologies Employed](projectmethodology/methodologiesemployed.md)
   - [Teamwork Dynamics](projectmethodology/teamworkdynamics.md)
   - [Reflection Moments](projectmethodology/reflectionmoments.md)

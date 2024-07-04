@@ -6,6 +6,7 @@ When testing make sure db/other endpoints in routes are available otherwise temp
 - **VPN Management:** Create, delete, and manage WireGuard VPN gateways.
 - **Sensor Data Handling:** Collect and analyze sensor data across various metrics.
 - **Sensor Adding:** Adding new sensors to the postgresdb.
+- **AI Model data** Sending and receiving data to an AI model.
 
 ## Installation and Setup
 
@@ -27,14 +28,6 @@ When testing make sure db/other endpoints in routes are available otherwise temp
    uvicorn main:app --reload  # Development mode
    uvicorn main:app --host 0.0.0.0 --port 8000  # Production mode
    ```
-
-## Usage
-
-### Starting the Server
-Run the following command to start the server:
-```bash
-uvicorn main:app --reload
-```
 
 ### API Endpoints
 Each endpoint is documented with its purpose, required parameters, and example responses.
@@ -157,20 +150,13 @@ Each endpoint is documented with its purpose, required parameters, and example r
 {
     // Request Body
     name: str
-<<<<<<< src/fastapi/README.md
     lattitude: int
     longitude: int
+    ttn_id: Optional[str]
     img_src: Optional[str]
     group_id: Optional[int]
 }
 - **Returns:** { "sensor_id": number }
-=======
-    img_src: str
-    group: Optional[str]
-    lattitude: int
-    longitude: int
-}
->>>>>>> src/fastapi/README.md
 ```
 #### Update sensor properties
 - **URL:** `/api/sensor/{id}`
@@ -198,7 +184,7 @@ Each endpoint is documented with its purpose, required parameters, and example r
 ### Sensor Groups
 *All endpoints related to registering and retrieving sensor groups*
 #### Retrieve existing sensor groups
-- **URL:** `/api/groups/`
+- **URL:** `/api/groups`
 - **Method:** GET 
 - **Description:** Retrieve all sensor groups
 - **Required:** None
@@ -212,7 +198,7 @@ Each endpoint is documented with its purpose, required parameters, and example r
 }]
 ```
 #### Register new sensor group
-- **URL:** `/api/groups/`
+- **URL:** `/api/groups`
 - **Method:** POST 
 - **Description:** Create a new sensor group
 - **Required:** 
@@ -260,10 +246,31 @@ Each endpoint is documented with its purpose, required parameters, and example r
 
 ### Sensor Group Statistics
 #### Retrieve statistics of group
-- **URL:** `/api/group/{group_id}/statistics` 
+- **URL:** `/api/group/{id}/statistics` 
 - **Method:** GET
 - **Description:** Retrieves a list of the average, tracked statistics of the sensors in the specified group
-- **Required:** ```group_id: int```
+- **Required:** ```id: int```
+- **Returns:** 
+```
+  // Response body format, array of all different types of measurements
+  {
+	  name: string, // bvb 'Temperature',
+	  unit: string, // bvb '°C'
+	
+	  value: number, // The current value of the sensor
+	  yesterdayValue: number, // The average value of yesterday
+	  averageWeeklyValue: number, // The average of 7 days age
+	
+	  percentChange: number, // Compared to the last 24 hours
+	  increaseIsGood: boolean, // Is an increase in this value a good or bad thing. Ex: an increase in co2 particles is bad, so false
+  }
+```
+
+#### Retrieve statistics of a sensor
+- **URL:** `/api/sensor/{id}/statistics` 
+- **Method:** GET
+- **Description:** Retrieves a list of the average, tracked statistics of the specific sensor
+- **Required:** ```id: int```
 - **Returns:** 
 ```
   // Response body format, array of all different types of measurements
@@ -321,3 +328,154 @@ Each endpoint is documented with its purpose, required parameters, and example r
 - **Required:** ```notification_id: int```
 - **Returns:** ```{"msg": "done"}```
 
+### AI Related endpoints
+
+#### Add prediction
+- **URL:** `/api/forecast/new_forecast` 
+- **Method:** POST
+- **Description:** Add forecast to the database.
+- **Required:**
+```
+{
+    forecast: int
+    forecast_date: int
+}
+```
+
+- **Returns:**
+```
+{
+  "forecast" : number,
+  "forecast_date" : number
+}
+```
+
+#### Retreive temperature data
+- **URL:** `/api/forecast/get_data` 
+- **Method:** GET
+- **Description:** Get temperature data of the last 2 days.
+- **Required:**
+```
+{
+    id: SENSOR_ID
+}
+```
+
+#### Send sensor data
+- **URL:** `/api/forecast/weather/{start}/{stop}` 
+- **Method:** GET
+- **Description:** Send all weatherdata from given time input.
+- **Required:** ```start: datetime, stop: datetime```
+- **Returns:** ```{"data" : result}```
+
+
+### Authorization related endpoints
+#### login endpoint
+
+- **URL:** `/api/auth/login`
+- **Method:** GET
+- **Description:** Redirects the user to the Authentik authorization endpoint.
+- **Required:** Request data from Authentik.
+
+- **Example request:**
+```http
+GET /api/auth/login
+```
+
+- **Example response:**
+```
+Redirects to the Authentik authorization URL.
+```
+
+### Authorization from login
+
+- **URL:** `/api/auth/authorize`
+- **Method:** FastAPI ROUTE
+- **Description:** Handles the callback from Authentik and stores the user's information in the session.
+- **Required:** `\`
+- **Example request:**
+```http
+GET /api/auth/authorize
+```
+- **Example response:**
+```json
+{
+  "access_token": "<access_token>",
+  "token_type": "Bearer",
+  "expires_in": 3600,
+  "refresh_token": "<refresh_token>",
+  "userinfo": {
+    "iss": "https://s140013.devops-ap.be/application/o/api/",
+    "sub": "John Doe",
+    "aud": "",
+    "exp": 9999999999,
+    "iat": 9999999999,
+    "auth_time": 9999999990,
+    "acr": "goauthentik.io/providers/oauth2/default",
+    "nonce": "",
+    "email": "John Doe",
+    "email_verified": true,
+    "uid": "JohnDoe1"
+  }
+}
+```
+
+### Example protected endpoint
+
+- **URL:** `/api/auth/protected`
+- **Method:** GET
+- **Description:** A protected endpoint that requires a valid OAuth2 token to access.
+- **Required:** 
+- **Example request:** 
+```http
+GET /api/auth/protected
+Authorization: Bearer <access_token>
+```
+- **Example response:**
+```json
+{
+  "message": "This is a protected endpoint!"
+}
+```
+
+### **Dependencies**
+
+### `token_required`
+
+A dependency function that validates the OAuth2 token provided in the request header.
+
+#### Example Usage
+```python
+async def protected(request: Request, token: str = Depends(token_required)):
+    return {"message": "This is a protected endpoint!"}
+```
+
+## Error Handling
+
+The authentication endpoints handle the following errors:
+- **401 Unauthorized:** If the token is missing or invalid.
+
+### Export Data Endpoint
+
+- **URL:** `/api/export`
+- **Method:** GET
+- **Description:** Retrieves a CSV file containing the data within the specified date range. The CSV file is streamed back as a text/csv response with a Content-Disposition header for download.
+- **Parameters:**
+  - `start_date (optional):` Start date and time (ISO 8601 format) of the data range. Defaults to 72 hours ago from the current time if not provided.
+  - `end_date (optional):` End date and time (ISO 8601 format) of the data range. Defaults to the current time if not provided.
+  - `page (optional):` Page number for pagination. Defaults to 1.
+  - `page_size (optional):` Number of records per page. Defaults to 100.
+- **Returns:**
+  - 200 OK: Returns a CSV file containing the data within the specified date range.
+  - 400 Bad Request: If the request parameters are invalid or missing.
+  - 404 Not Found: If no data is found for the specified date range.
+  - 500 Internal Server Error: If there's an issue fetching data from InfluxDB.
+- **Example Usage:**
+
+  - Export data from last 24h:
+
+    `GET /api/export?start_date=2024-07-03T00:00:00Z&end_date=2024-07-04T00:00:00Z`
+
+  - Export data with pagination (fetching page 2 with 50 records per page):
+
+    `GET /api/export?start_date=2024-07-01T00:00:00Z&end_date=2024-07-04T00:00:00Z&page=2&page_size=50`

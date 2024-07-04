@@ -10,7 +10,7 @@ Het kan de eerste dagen even een shock zijn maar laat het even bekomen en je zal
 het huis is eigenlijk 2 huizen  op elkaar, verbonden met een trap - beetje als een appartement gang.
 
 1. Matras + bedframe + kopkussens (2p harde matras - 140cm breed+-)
-   1. er zijn slechts 6 kamers met een muggenframe.
+   1. er zijn slechts 4 kamers met een muggenframe.
 2. ventilatoren in elke kamer
 3. 4 kamers met airco
 4. 4x douche (warm en koud water)

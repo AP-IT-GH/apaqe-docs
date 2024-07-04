@@ -30,7 +30,7 @@ het huis is eigenlijk 2 huizen  op elkaar, verbonden met een trap - beetje als e
 * kussensloop
 * Nieuw muggennet (of muggentent als je erin past)
   * als je kamer geen frame heeft, dan zal je constructie moeten bouwen om je muggennet op te hangen (ventilator hangt in het midden van je kamer aan plafond)
-    je kan hiervoor best dubbelzijdige klevers meenemen en haakjes (soms zijn er al haakjes aanwezig)
+    je kan hiervoor best dubbelzijdige klevers, haakjes en touw meenemen (soms zijn er al haakjes aanwezig)
 * handdoeken (zowel voor zee als douche)
 * keukenhanddoeken
 * the usual (douche stuff, kleren, ...)

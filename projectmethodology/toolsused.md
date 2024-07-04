@@ -6,7 +6,7 @@
 
 The most important tool for the project was Notion. Notion is a versatile platform that allows you to take notes, save documents, create kanban boards, and manage tasks all in one place. We used Notion extensively to organize our project documentation, plan our tasks, and keep track of our progress. Its collaborative features enabled all team members to stay updated and contribute efficiently. Additionally, Notion is great for taking notes, and it is free for single users, making it an accessible tool for individual use and preliminary project planning. It is a tool where you can easily combine everything to achieve a streamlined operation.
 
-![Example of a Notion sprintboard](img/sprintboard.png)
+![Example of a Notion kanbanboard](img/kanbanboard.png)
 
 This is an example of a Notion sprintboard. We used this sprintboard more like a Kanban board rather than working in sprints.
 

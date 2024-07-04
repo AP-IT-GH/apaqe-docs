@@ -1,4 +1,4 @@
-# Methodologies Employed for Managing the Project
+# Methodologies used for managing the project
 
 ## Agile
 

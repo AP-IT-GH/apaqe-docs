@@ -33,7 +33,7 @@
 
   - [Tools Used](projectmethodology/toolsused.md)
   - [The logbook](projectmethodology/thelogbook.md)
-  - [Methodologies Employed](projectmethodology/methodologiesemployed.md)
+  - [Methodologies used](projectmethodology/methodologiesused.md)
   - [Teamwork Dynamics](projectmethodology/teamworkdynamics.md)
   - [Reflection Moments](projectmethodology/reflectionmoments.md)
   - [Keys to Effective Teamwork](projectmethodology/keystoeffectiveteamwork.md)

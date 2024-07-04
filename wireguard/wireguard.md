@@ -26,7 +26,7 @@ This section outlines how to integrate WG-Easy's API with your custom web interf
 
 ## Prerequisites:
 
-- A Server with internet access
+- A Server with internet access (Server A) 
 - A Client Device to connect to the VPN 
 - WG-Easy installed and configured on Server A
 - Basic understanding of API calls and web development

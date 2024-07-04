@@ -34,6 +34,5 @@
   - [Methodologies Employed](projectmethodology/methodologiesemployed.md)
   - [Teamwork Dynamics](projectmethodology/teamworkdynamics.md)
   - [Reflection Moments](projectmethodology/reflectionmoments.md)
-  - [Meeting Insights](projectmethodology/meetinginsights.md)
   - [Keys to Effective Teamwork](projectmethodology/keystoeffectiveteamwork.md)
   - [Lessons from Mistakes](projectmethodology/lessonsfrommistakes.md)

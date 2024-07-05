@@ -29,10 +29,14 @@ When testing make sure db/other endpoints in routes are available otherwise temp
    uvicorn main:app --host 0.0.0.0 --port 8000  # Production mode
    ```
 
-### API Endpoints
+## API Endpoints
 Each endpoint is documented with its purpose, required parameters, and example responses.
 
 ## Endpoints
+
+### Swagger UI
+Because we use *FastAPI* you can see the Swagger UI at this endpoint.
+- **URL:** `/docs`
 
 ### Root
 - **URL:** `/`

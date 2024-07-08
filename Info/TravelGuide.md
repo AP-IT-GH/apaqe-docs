@@ -38,7 +38,7 @@ het huis is eigenlijk 2 huizen  op elkaar, verbonden met een trap - beetje als e
 * ZIP bags (grote) - dit is voor je eten (beestjes)
 * keukenrol + WC papier
 * anti-muggen stuff (best aangeraden zowel muggenspray met DEET 50 als electronische muggenstekker)
-* US stekker -> EU stekker - omvormer (neem ook stekkerblokken mee in gewone EU vorm)
+* UK stekker -> EU stekker - omvormer (neem ook stekkerblokken mee in gewone EU vorm)
 * klein busje dreft + wasmiddel (handwas)
 * anti-insecten stuff eventueel, mieren en kakkerlakken
 * cash USD (best aanvragen aan uw bank - reken al maar richting de 1000$)
@@ -61,7 +61,7 @@ het huis is eigenlijk 2 huizen  op elkaar, verbonden met een trap - beetje als e
   * tuk tuk 		- 1 km = 500 schilling ongeveer (dan heb je goede prijs)
   * dala dala 	- 500 TZS
 * dolfijn zwemmen - 37$ de man (met eten bij - lunch is vis of vegetarisch)
-* safari - **nog in te vullen**
+* safari - 400$ + transactie kosten van ong 15$
 * eten op restaurant - dit zal rond de 5-12$ de man zijn (13'000 - 30'000TZS)
 * eten van mama
   * Best eens 1x in de week ofso met Hamis naar de markt gaan en grote inkopen doen zoals 5kg bloem bijvoorbeeld

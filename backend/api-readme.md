@@ -62,7 +62,7 @@ SECRET_KEY=
 Each endpoint is documented with its purpose, required parameters, and example responses.
 
 ## Endpoints
-
+  
 ### Swagger UI
 Because we use *FastAPI* you can see the Swagger UI at this endpoint.
 - **URL:** `/docs`
@@ -214,17 +214,20 @@ _All endpoints related to retrieving sensor data and registrating new sensors to
 - **URL:** `/api/sensor`
 - **Method:** POST
 - **Description:** Post new sensor data.
+- **Content Type** multipart/form-data
 - **Required:**
 
 ```
 {
-    // Request Body
+    // Request form type text
     name: str
-    lattitude: int
-    longitude: int
-    ttn_id: Optional[str]
-    img_src: Optional[str]
-    group_id: Optional[int]
+    group_id: int
+    lattitude: float
+    longitude: float
+
+    // Request form type file
+    image: file
+
 }
 - **Returns:** { "sensor_id": number }
 ```
@@ -289,6 +292,7 @@ _All endpoints related to retrieving sensor data and registrating new sensors to
 
 - **Returns:** `{"message" : "updated"}`
 
+
 #### Retrieve aggregated sensordata
 
 - **URL:** `/api/sensor/{sensorid}/{fields}/{start}/{stop}/{aggregateWindow}`
@@ -296,6 +300,31 @@ _All endpoints related to retrieving sensor data and registrating new sensors to
 - **Description:** Retrieve aggregated sensor data
 - **Required:** `sensorid: int, fields: str, start: datetime, stop: datetime, aggregateWindow: str`
 - **Returns:** `{"data" : result}`
+
+### Key components of saving images
+
+#### **Static file mounting**
+- The application mounts a directory named `sensor_images` to serve images via the `/images` URL path. This will then be accesible by the frontend.
+   ```python
+   app.mount("/images", StaticFiles(directory="sensor_images"), name="images")
+   ```
+
+#### **Image Saving**
+   - The image is saved to the `sensor_images` directory with a unique filename based on the current timestamp.
+   ```python
+   async def save_image(image: UploadFile) -> str:
+       timestamp = int(time.time())
+       image_filename = f"{timestamp}_{image.filename}"
+       image_path = os.path.join("sensor_images", image_filename)
+       try:
+           with open(image_path, "wb") as img_file:
+               content = await image.read()
+               img_file.write(content)
+           return f"/images/{image_filename}"
+       except Exception as e:
+           print(e)
+           raise HTTPException(status_code=500, detail="Failed to save image")
+   ```
 
 ### Sensor Groups
 

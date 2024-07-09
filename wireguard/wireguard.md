@@ -50,6 +50,6 @@ We use fastAPi to create routes that we can call at the frontend, which in turn 
 
 2. Configure Server A (frontend dashboard):
 
-Within the interface on the dashboard, create a new "Client" by just entering the name of the new gateway. Now you can see the IP address, the name and the gateway ID. 
+Within the interface on the dashboard, create a new "Client" by just entering the name of the new gateway. The name can't be longer than 15 characters. Now you can see the IP address, the name and the gateway ID. 
 
 Sidenote: It's not possible to enter the WireGuard interface directly

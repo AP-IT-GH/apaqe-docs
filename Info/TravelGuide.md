@@ -49,27 +49,6 @@ het huis is eigenlijk 2 huizen  op elkaar, verbonden met een trap - beetje als e
 * visa is 50$ bij aankomst (hou pen bij de hand op de laatste vlucht naar zanzibar - dit is papier)
   * 2x papieren, 1 voor registratie en 1 voor visa (visa papier krijg je pas in de luchthaven)
 
-## Prijzen
-
-* Koop uw SIM card niet aan luchthaven - vraag of iemand van KIST er één kan regelen - of probeer ESIM
-  * de prijs voor 24GB zou 23$ dollar zijn +-
-* beef zonder bot 13 000 ts per kg - beef met bot 10 000 ts per kg
-  * aangeraden om veel EI te eten - eerder vegetarisch dus
-    * er is op de main road een eierboer - goedkoper als in de markets
-* vervoer prijzen
-  * stone town 	- mbweni road (afstanden van ong 5km) = 10k TZS -- 15k TZS voor ons is goede prijs
-  * tuk tuk 		- 1 km = 500 schilling ongeveer (dan heb je goede prijs)
-  * dala dala 	- 500 TZS
-* dolfijn zwemmen - 37$ de man (met eten bij - lunch is vis of vegetarisch)
-* safari - 400$ + transactie kosten van ong 15$
-* eten op restaurant - dit zal rond de 5-12$ de man zijn (13'000 - 30'000TZS)
-* eten van mama
-  * Best eens 1x in de week ofso met Hamis naar de markt gaan en grote inkopen doen zoals 5kg bloem bijvoorbeeld
-  * 30'000 voor 13 mensen (zowel middag als avondeten) **moet nog herbekeken worden**
-* Elektriciteit zit niet mee in de prijs van het huis - 30'000 TZS per 100KWH per verdiep
-  * meestal zal beneden verdiep elektriciteit sneller op gaan
-* Water (pak van 6x 1,5L) = 3'500-4'000 TZS -- bidon van 18L = 5'000 TZS (moeilijk uit te gieten)
-
 ## Huisvrouw - Mama
 
 Deze dame zit mee in de prijs van het huisje. Je moet gewoon vragen als je wilt dat ze iets voor je doet. (ze kan moeilijk lezen en geen engels, gebruik google translate en luidspreker)

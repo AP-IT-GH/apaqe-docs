@@ -10,7 +10,7 @@ Het kan de eerste dagen even overwelmend zijn maar laat het even bekomen en je z
 het huis is eigenlijk 2 huizen  op elkaar, verbonden met een trap - beetje als een appartement gang.
 
 1. Matras + bedframe + kopkussens (2p harde matras - 140cm breed+-)
-   1. er zijn slechts 6 kamers met een muggenframe.
+   1. er zijn slechts 4 kamers met een muggenframe.
 2. ventilatoren in elke kamer
 3. 4 kamers met airco
 4. 4x douche (warm en koud water)
@@ -30,7 +30,7 @@ het huis is eigenlijk 2 huizen  op elkaar, verbonden met een trap - beetje als e
 * kussensloop
 * Nieuw muggennet (of muggentent als je erin past)
   * als je kamer geen frame heeft, dan zal je constructie moeten bouwen om je muggennet op te hangen (ventilator hangt in het midden van je kamer aan plafond)
-    je kan hiervoor best dubbelzijdige klevers meenemen en haakjes (soms zijn er al haakjes aanwezig)
+    je kan hiervoor best dubbelzijdige klevers, haakjes en touw meenemen (soms zijn er al haakjes aanwezig)
 * handdoeken (zowel voor zee als douche)
 * keukenhanddoeken
 * the usual (douche stuff, kleren, ...)
@@ -38,7 +38,7 @@ het huis is eigenlijk 2 huizen  op elkaar, verbonden met een trap - beetje als e
 * ZIP bags (grote) - dit is voor je eten (beestjes)
 * keukenrol + WC papier
 * anti-muggen stuff (best aangeraden zowel muggenspray met DEET 50 als electronische muggenstekker)
-* US stekker -> EU stekker - omvormer (neem ook stekkerblokken mee in gewone EU vorm)
+* UK stekker -> EU stekker - omvormer (neem ook stekkerblokken mee in gewone EU vorm)
 * klein busje dreft + wasmiddel (handwas)
 * anti-insecten stuff eventueel, mieren en kakkerlakken
 * cash USD (best aanvragen aan uw bank - reken al maar richting de 1000$)
@@ -48,6 +48,27 @@ het huis is eigenlijk 2 huizen  op elkaar, verbonden met een trap - beetje als e
 * reispas (op voorhand aanvragen aan uw gemeente)
 * visa is 50$ bij aankomst (hou pen bij de hand op de laatste vlucht naar zanzibar - dit is papier)
   * 2x papieren, 1 voor registratie en 1 voor visa (visa papier krijg je pas in de luchthaven)
+
+## Prijzen
+
+* Koop uw SIM card niet aan luchthaven - vraag of iemand van KIST er één kan regelen - of probeer ESIM
+  * de prijs voor 24GB zou 23$ dollar zijn +-
+* beef zonder bot 13 000 ts per kg - beef met bot 10 000 ts per kg
+  * aangeraden om veel EI te eten - eerder vegetarisch dus
+    * er is op de main road een eierboer - goedkoper als in de markets
+* vervoer prijzen
+  * stone town 	- mbweni road (afstanden van ong 5km) = 10k TZS -- 15k TZS voor ons is goede prijs
+  * tuk tuk 		- 1 km = 500 schilling ongeveer (dan heb je goede prijs)
+  * dala dala 	- 500 TZS
+* dolfijn zwemmen - 37$ de man (met eten bij - lunch is vis of vegetarisch)
+* safari - 400$ + transactie kosten van ong 15$
+* eten op restaurant - dit zal rond de 5-12$ de man zijn (13'000 - 30'000TZS)
+* eten van mama
+  * Best eens 1x in de week ofso met Hamis naar de markt gaan en grote inkopen doen zoals 5kg bloem bijvoorbeeld
+  * 30'000 voor 13 mensen (zowel middag als avondeten) **moet nog herbekeken worden**
+* Elektriciteit zit niet mee in de prijs van het huis - 30'000 TZS per 100KWH per verdiep
+  * meestal zal beneden verdiep elektriciteit sneller op gaan
+* Water (pak van 6x 1,5L) = 3'500-4'000 TZS -- bidon van 18L = 5'000 TZS (moeilijk uit te gieten)
 
 ## Huisvrouw - Mama
 

@@ -210,10 +210,24 @@ _All endpoints related to retrieving sensor data and registrating new sensors to
 ```
 
 #### Register new sensor device
+The `post_sensordata` endpoint handles creating a new sensor. Several parameters are optional.
 
 - **URL:** `/api/sensor`
 - **Method:** POST
 - **Description:** Post new sensor data.
+- **Parameters:**
+  - `name`: The name of the sensor (required).
+  - `group_id`: The group ID the sensor belongs to (optional, defaults to 1).
+  - `latitude`: The latitude of the sensor location (required).
+  - `longitude`: The longitude of the sensor location (required).
+  - `ttn_id`: The TTN ID of the sensor (optional).
+  - `image`: An uploaded image of the sensor (optional).
+
+- **Behavior:**
+  - If `group_id` is not provided, it defaults to 1.
+  - `img_src` is set to a default image path initially.
+  - If an image is provided, it is saved, and `img_src` is updated.
+  - If `ttn_id` is provided, it is inserted into the database.
 - **Content Type** multipart/form-data
 - **Required:**
 
@@ -224,6 +238,7 @@ _All endpoints related to retrieving sensor data and registrating new sensors to
     group_id: int
     lattitude: float
     longitude: float
+    ttn_id: str
 
     // Request form type file
     image: file
@@ -232,16 +247,25 @@ _All endpoints related to retrieving sensor data and registrating new sensors to
 - **Returns:** { "sensor_id": number }
 ```
 
-#### Register new sensor device
+#### Register new sensor devices in bulk
+The `post_sensordata_bulk` endpoint handles bulk uploading of sensor data from a CSV file.
 
 - **URL:** `/api/sensors`
 - **Method:** POST
 - **Description:** Post new sensor data in bulk.
+- **Parameters:**
+  - `file`: The uploaded CSV file containing sensor data.
+
+- **Behavior:**
+  - For each row in the CSV file:
+    - If `group_id` is not provided, it defaults to 1.
+    - Each sensor is inserted into the database.
+    - If `ttn_id` is provided, it is inserted into the database.
 - **Required:** CSV File with following format.
 
 ```
 {
-    sensor_name,img_src,group_id,lattitude,longitude
+    sensor_name,group_id,lattitude,longitude,ttn_id
 }
 
 ```
@@ -273,10 +297,17 @@ _All endpoints related to retrieving sensor data and registrating new sensors to
 
 
 #### Update sensor properties
+The `post_sensordata_` endpoint handles updating an existing sensor.
 
 - **URL:** `/api/sensor/{id}`
 - **Method:** PATCH
 - **Description:** Update sensor properties.
+- **Parameters:**
+  - `id`: The ID of the sensor to be updated.
+  - `updated_data`: The updated data for the sensor.
+
+- **Behavior:**
+  - Each field in `updated_data` is checked. If a field is not provided, the existing value from the sensor is used.
 - **Required:**
 
 ```
@@ -302,6 +333,7 @@ _All endpoints related to retrieving sensor data and registrating new sensors to
 - **Returns:** `{"data" : result}`
 
 ### Key components of saving images
+- Because this part is a bit more complicated here is some explaination.
 
 #### **Static file mounting**
 - The application mounts a directory named `sensor_images` to serve images via the `/images` URL path. This will then be accesible by the frontend.
@@ -309,22 +341,30 @@ _All endpoints related to retrieving sensor data and registrating new sensors to
    app.mount("/images", StaticFiles(directory="sensor_images"), name="images")
    ```
 
-#### **Image Saving**
-   - The image is saved to the `sensor_images` directory with a unique filename based on the current timestamp.
-   ```python
-   async def save_image(image: UploadFile) -> str:
-       timestamp = int(time.time())
-       image_filename = f"{timestamp}_{image.filename}"
-       image_path = os.path.join("sensor_images", image_filename)
-       try:
-           with open(image_path, "wb") as img_file:
-               content = await image.read()
-               img_file.write(content)
-           return f"/images/{image_filename}"
-       except Exception as e:
-           print(e)
-           raise HTTPException(status_code=500, detail="Failed to save image")
-   ```
+#### `save_image` Function
+
+```python
+async def save_image(image: UploadFile, id) -> str:
+    _, file_extension = os.path.splitext(image.filename)
+    image_filename = f"{id}{file_extension}"
+
+    image_path = os.path.join("sensor_images", image_filename)
+    try:
+        with open(image_path, "wb") as img_file:
+            content = await image.read()
+            img_file.write(content)
+        return f"/images/{image_filename}"
+    except Exception as e:
+        print(e)
+        raise HTTPException(status_code=500, detail="Failed to save image")
+```
+
+- **Parameters:**
+  - `image`: The uploaded image file.
+  - `id`: The ID to be used in the image filename.
+
+- **Returns:** The path to the saved image.
+
 
 ### Sensor Groups
 

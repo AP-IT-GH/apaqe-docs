@@ -137,7 +137,7 @@ Then safe and finish the instance configuration.
             steps {
                 script {
                     // Git repository checkout
-                    git credentialsId: 'b17db829-5978-4565-8b23-60f13b1e31e3', branch: 'features/backend-traefik', url: 'https://gitlab.apstudent.be/nox/znz-infra.git'
+                    git credentialsId: 'b17db829-5978-4565-8b23-60f13b1e31e3', branch: 'dev', url: 'https://gitlab.apstudent.be/nox/znz-infra.git'
                     
                     sh 'if [ -d "znz-infra" ]; then rm -rf znz-infra; fi'
                     sh 'mkdir -p znz-infra'

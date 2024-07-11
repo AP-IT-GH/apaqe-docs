@@ -29,12 +29,11 @@
   - [Sensor Box]
   - [Board]
   - [Sensors]
-- [Managing the project](projectmethodology/README.md)
-
-  - [Tools Used](projectmethodology/toolsused.md)
-  - [The logbook](projectmethodology/thelogbook.md)
-  - [Methodologies Employed](projectmethodology/methodologiesemployed.md)
-  - [Teamwork Dynamics](projectmethodology/teamworkdynamics.md)
-  - [Reflection Moments](projectmethodology/reflectionmoments.md)
-  - [Keys to Effective Teamwork](projectmethodology/keystoeffectiveteamwork.md)
-  - [Lessons from Mistakes](projectmethodology/lessonsfrommistakes.md)
+- [Managing the project](project-methodology/README.md)
+  - [Selected project methodology](project-methodology/selected-methodology.md)
+  - [Tools Used](project-methodology/tools-used.md)
+  - [Logbook](project-methodology/logbook.md)
+  - [Teamwork Dynamics](project-methodology/teamwork-dynamics.md)
+  - [Reflection Moments](project-methodology/reflection-moments.md)
+  - [Keys to Effective Teamwork](project-methodology/effective-teamwork.md)
+  - [Lessons from Mistakes](project-methodology/lessons-learned.md)

@@ -1,6 +1,6 @@
 # CI/CD Pipeline
 ## What is a CI/CD? 
-CI/CD stands for Continuous Integration and Continuous Deployment, practices designed to automate and improve the software development process. Continuous Integration involves regularly merging code changes into a shared repository and running automated tests to catch issues early. Continuous Deployment takes it further by automatically deploying tested code to production. The main benefits of CI/CD include faster delivery, improved software quality, and reduced risk of human error. 
+CI/CD stands for Continuous Integration and Continuous Deployment. Continuous Integration involves regularly merging code changes into a shared repository and running automated tests to catch issues early. Continuous Deployment takes it further by automatically deploying tested code to production. 
 ## Why do we use CI/CD
 We use CI/CD to automate and streamline the software development lifecycle. It helps in integrating code changes frequently, running automated tests, and deploying applications reliably and quickly to production. This approach enhances productivity, reduces manual errors, and ensures that new features and updates reach users faster and with higher quality.
 
@@ -22,13 +22,6 @@ Jenkins is a powerful automation server that facilitates Continuous Integration 
 
 5. **Distributed Builds**: Jenkins can distribute build and test tasks across multiple machines, enabling parallel execution of jobs across different platforms. This capability accelerates the build and deployment processes, enhancing efficiency in large-scale development environments.
 
-### Use Cases
-
-- **CI/CD Pipelines**: Jenkins is primarily used to automate the building, testing, and deployment of applications through CI/CD pipelines. These pipelines help teams deliver software faster and with higher quality by automating repetitive tasks and ensuring consistency in the development process.
-
-- **Automated Testing**: Jenkins integrates with testing frameworks and tools to automate testing processes, including unit tests, integration tests, and acceptance tests. This automation ensures that code changes are thoroughly tested before deployment, reducing the risk of bugs and regressions.
-
-- **Continuous Deployment**: Teams can configure Jenkins to automatically deploy applications to production environments based on predefined triggers and conditions. This automation streamlines the deployment process, making it faster, more reliable, and less error-prone.
 
 ### Use of Jenkins 
 We do the setup with Ansible so you need to install Ansible in the docker container of Jenkins. 
@@ -136,7 +129,59 @@ Then safe and finish the instance configuration.
 
     `git credentialsId: '[correct ID]', branch: 'dev', url: 'https://gitlab.apstudent.be/nox/znz-infra.git'`
 
-    - 
+    The JenkinsFile: 
+    ```pipeline {
+    agent any
+    stages {
+        stage('Checkout') {
+            steps {
+                script {
+                    // Git repository checkout
+                    git credentialsId: 'b17db829-5978-4565-8b23-60f13b1e31e3', branch: 'features/backend-traefik', url: 'https://gitlab.apstudent.be/nox/znz-infra.git'
+                    
+                    sh 'if [ -d "znz-infra" ]; then rm -rf znz-infra; fi'
+                    sh 'mkdir -p znz-infra'
+                    sh 'mv -f Jenkinsfile README.md ansible gateway src znz-infra/'
+                }
+            }
+        }
+        stage('Create Ansible Hosts File') {
+            steps {
+                script {
+                    def hostsContent = """
+                        [FLWSB_hetzner]
+                        188.34.197.214 ansible_user=root
+                    """
+                    writeFile file: 'znz-infra/ansible/hosts', text: hostsContent
+                }
+            }
+        }
+        stage('Create .env File') {
+            steps {
+                    withCredentials([file(credentialsId: 'EnvFile', variable: 'VARS_FILE')]) {
+                    script {
+                        def envContent = sh(script: "cat \$VARS_FILE", returnStdout: true).trim()
+                        writeFile file: 'znz-infra/src/.env', text: "${envContent}"
+                    }
+                }
+            }
+        } 
+        stage('Run Ansible') {
+            steps {
+                script {
+                    withCredentials([file(credentialsId: 'VaultFile', variable: 'Vault_FILE')]) {
+                        dir('znz-infra/ansible') {
+                            sh '''
+                                ansible-playbook FLWSB-backend-ansible.yaml -e @${Vault_FILE}
+                            '''
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+```
 
 
 

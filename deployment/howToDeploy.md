@@ -42,8 +42,8 @@ ansible-playbook backup-server.yml --ask-vault-pass
 This command will prompt you for the vault password. You can find the password in your documentation at `deployment/ansible.md`.
 
 
-## Production server
-#### Manual configuration 
+# Production server
+## Manual configuration 
 - **Gitlab plugin**: To install the GitLab plugin in Jenkins, navigate to the Jenkins dashboard and click on "Manage Jenkins". Then, select "Manage Plugins." In the "Plugin Manager" page, go to the "Available" tab and search for "GitLab". Jenkins will then download and install the plugin. 
 
 - **Security settings**: To ensure secure communication and configuration in Jenkins, navigate to the Jenkins dashboard, click on "Manage Jenkins", and select "Configure Global Security". In the security settings, enable the proxy setting (CSRF Protection) to enhance security measures.

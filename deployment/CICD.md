@@ -93,30 +93,51 @@ docker exec -it [containername]/bin/bash
 ```bash
 docker logs [containername]
 ```
-3. **Istall Recommended Plugins**:
+3. **Install suggested Plugins**:
 Once Jenkins is accessible via https://jenkins.apaqe.eu, access the Jenkins web interface. Follow these steps to install recommended plugins:
 
 - Navigate to https://jenkins.apaqe.eu in your web browser.
 - Follow the on-screen instructions to set up Jenkins, including entering the initial admin password retrieved earlier.
-- Select the option to install recommended plugins during the setup process.
+- Select the option to install suggested plugins during the setup process.
 
-4. **Set Up Jenkins Account**:
-After plugin installation, create your Jenkins account:
+After the installation: You don't need to create first admin user, skip and continue as admin. 
+Then safe and finish the instance configuration. 
 
-- Provide a username, password, and email address for your admin account.
-- Complete the setup wizard to configure basic settings and finalize Jenkins setup.
 
 #### Manual configuration 
 - **Gitlab plugin**: To install the GitLab plugin in Jenkins, navigate to the Jenkins dashboard and click on "Manage Jenkins". Then, select "Manage Plugins." In the "Plugin Manager" page, go to the "Available" tab and search for "GitLab". Jenkins will then download and install the plugin. 
 
-- **Security settings**: To ensure secure communication and configuration in Jenkins, navigate to the Jenkins dashboard, click on "Manage Jenkins", and select "Configure Global Security". In the security settings, enable the proxy setting to enhance security measures.
+- **Security settings**: To ensure secure communication and configuration in Jenkins, navigate to the Jenkins dashboard, click on "Manage Jenkins", and select "Configure Global Security". In the security settings, enable the proxy setting (CSRF Protection) to enhance security measures.
+
+- **User settings**: To configure an easier password, navigate to the Jenkins dashboard. Click on your username, then go to the admin section. In the configuration settings, change the default password. Save the configuration, and you will need to log in again with the new password. 
 
 - **Gitlab connection**: To set up a connection between Jenkins and GitLab, go to your GitLab account and create a personal access token with the necessary scopes for Jenkins integration. Return to the Jenkins dashboard and click on "Manage Jenkins," then select "Configure System." In the "GitLab" section, add the GitLab server details and the personal access token created in GitLab.
 
 - **Create a CI/CD Pipeline**: To configure a CI/CD pipeline for your project, navigate to your Jenkins dashboard, click on "New Item," and select "Pipeline." Configure the pipeline by specifying the GitLab repository and defining the stages and steps for your CI/CD process.
 
---> hier komt nog de jenkinsfile
+  - Necessary steps in web platform:  
+  1. Go to dashboard, select the correct pipeline that you just made and click configuration.   
+  2. Go to the section pipeline and choose "pipeline script from SCM". 
+  3. Write the correct repository URL (choose the correct branch) and add new credentials. 
+  4. Click safe. 
 
-- **Add credentails**: To securely manage sensitive information for your Jenkins pipeline, navigate to "Manage Jenkins" on the dashboard and select "Manage Credentials" from the list. Add the `.env` file and `vault.yml` under the credentials section, ensuring they are securely stored and accessible to your pipeline jobs.
+  - Necessary steps in destination container: 
+    1. `docker exec -it [containerID] /bin/bash`
+    2. `ssh-keygen`
+  
+  - Necessary steps in Jenkins container:
+    1. `ssh-keygen`
+    2. `cat id_rsa.pub` and copy the key in the destination container in 'authorized_keys' 
+    3. You have do do a manual ssh connection: `ssh root@[ip]`
+
+  5. Go to dashboard, select "Manage Jenkins". Go to credentials and ad a new credential (secret file). Upload the `vault.yml` (ID = VaultFile) and upload the `.env` file (ID = EnvFile). 
+  6. In the jenkinsfile: 
+    - Go to dashboard, select "Manage Jenkins". Go to credentials and copy the correct ID. 
+
+    `git credentialsId: '[correct ID]', branch: 'dev', url: 'https://gitlab.apstudent.be/nox/znz-infra.git'`
+
+    - 
+
+
 
 

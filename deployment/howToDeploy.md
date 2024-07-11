@@ -1,7 +1,4 @@
-# How to deploy 
-## Main server
-
-# VM Setup with Ansible
+# Main server setup
 
 This guide will help you set up a virtual machine (VM) with Ansible, configure domain and subdomains, and deploy necessary configurations using an Ansible playbook.
 

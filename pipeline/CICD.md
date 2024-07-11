@@ -33,7 +33,18 @@ Jenkins is a powerful automation server that facilitates Continuous Integration 
 ### Use of Jenkins 
 We do the setup with Ansible so you need to install Ansible in the docker container of Jenkins. 
 
---> inzetten hoe 
+Dockerfile: 
+```
+FROM jenkins/jenkins:jdk17
+USER root
+RUN apt-get update \
+    && apt-get install -y \
+        ansible \
+    && rm -rf /var/lib/apt/lists/*
+
+USER jenkins
+````
+
 
 #### Setting up Jenkins with Docker 
 

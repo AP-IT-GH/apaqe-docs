@@ -1,8 +1,5 @@
 # How to deploy 
 ## Main server
-Sure, here's the English documentation for setting up a virtual machine with Ansible, configuring domain and subdomains, setting up an SSH key on the target server, and running the Ansible playbook:
-
----
 
 # VM Setup with Ansible
 

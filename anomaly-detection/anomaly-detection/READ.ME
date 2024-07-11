@@ -1,0 +1,45 @@
+# Anomaly detection with AI
+
+In this application, we use a simple AI algorithm based on the Gaussian equation. The goal of the AI is to determine if the temperature is above or below normal compared to a historical dataset from Zanzibar. 
+
+By using the API, we retrieve the date and temperature. We then process these data through the AI algorithm to receive an output indicating whether the temperature is below or above normal. This result is displayed as a message on the dashboard.
+
+## The flow of Data
+
+Using an API request, we query all the temperature data of the previous day in the database. All this data is then placed into an dataframe, and an average would be calculated.
+
+This average is processed through the AI algorithm, which produces a numerical output. This numerical value corresponds to a specific string message that will be displayed on the dashboard.
+
+The output then makes a request to the API at its own endpoint, which stores the string value in the database.
+
+A message would be visible on the dashboard for the specific previous day. If the temperature is an anomaly, a message will pop up on the dashboard indicating that the temperature is very low or high for that time of the year.
+
+![Diagram](../pictures/project-zanzibar-ai.jpg)
+
+## The logic of the Ai algorithm
+
+In this section, we discuss the logic the algorithm follows to determine if the output is below or above normal.
+
+### 1. Loading historical data
+
+The first step in our algorithmic flow is to read the historical dataset containing data from 2018-01-01 to 2024-02-28.
+
+### 2. Preprossessing
+
+After collecting the historical data, we manipulate the dataset to retain only the necessary information. We convert the datetime and 'weeknummer' (week number) to the correct datatype and create a variable containing only the data we want to use from the dataset.
+
+We decided to split the dataset into two parts:
+
+Winter and spring data
+Summer and autumn data
+The reason for this split is that using the entire dataset as a single part would result in the algorithm not reacting well due to the significant temperature differences between spring/winter and summer/autumn. Therefore, the dataset was divided into two parts.
+
+### 3. Model preparation
+
+We use two types of models in this application: one based on spring and winter data, and another based on summer and autumn data.
+
+We created a subdataset for these two to easily distinguish between warmer and colder months.
+
+### 4. Model building
+
+In this part, we developed the entire AI algorithm based on the Gaussian equation. The epsilon value in the algorithm ensures that any input above or below a certain threshold is classified as an anomaly.

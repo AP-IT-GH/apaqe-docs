@@ -14,7 +14,7 @@
     * Local MQTT
   * [Authentication]
   * [Notification]
-* [AI Development]
+* [Anomaly Detection](anomaly-detection/README.md)
 * [Deployment](deployment/README.md)
   * [Ansible]
   * [WireGaurd]

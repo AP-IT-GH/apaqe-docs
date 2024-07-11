@@ -14,7 +14,7 @@ The output then makes a request to the API at its own endpoint, which stores the
 
 A message would be visible on the dashboard for the specific previous day. If the temperature is an anomaly, a message will pop up on the dashboard indicating that the temperature is very low or high for that time of the year.
 
-![Diagram](../pictures/project-zanzibar-ai.jpg)
+![Diagram](img/project-zanzibar-ai.jpg)
 
 ## The logic of the Ai algorithm
 

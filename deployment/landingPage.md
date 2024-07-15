@@ -33,6 +33,6 @@ The production environment is set up through our CI/CD pipeline and contains the
 WireGuard provides secure VPN connections that allow remote access to our gateways. This ensures that communications within our infrastructure remain secure and encrypted.
 
 #### Gateway
-The gateway acts as an access point to our network, where incoming traffic is managed and routed to the appropriate services. This provides security and helps manage traffic, keeping our infrastructure protected from unauthorised access.
+The gateway acts as a communication point between the LoRa network and our system. A sensor sends messages to the gateway, using the LoRa communication protocol.
 
 

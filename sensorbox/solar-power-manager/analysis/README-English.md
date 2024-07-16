@@ -18,8 +18,8 @@
 - [Charger](#charger)
 - [Final comparison](#final-comparison)
 - [Solar panel](#solar-panel)
-  - [Opties](#opties)
-- [Batterij](#batterij)
+  - [Options](#options)
+- [Battery](#battery)
   - [Charging and discharging](#charging-and-discharging)
     - [C rating](#c-rating)
     - [Load curve](#load-curve)
@@ -146,7 +146,7 @@ Curently we are working with solar panels which were available at school. These 
    1. Connect in series for biggest buffer.
    2. Parallel to achieve the biggest charge current.
 
-## Opties
+## Options
 
 | Power | Dimensions | Voltage (V) | Max. voltage (V) | Max. current (mA) | Open circuit voltage (V) | Link                                                                                                                                         |
 | -------- | ---------- | ---------------- | ----------------- | ---------------- | ------------------- | -------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -161,7 +161,7 @@ Curently we are working with solar panels which were available at school. These 
 
 1,5 watt
 
-# Batterij
+# Battery
 
 | Supplier   | Type                     | price (€)  | Voltage (V)  | Capaciteit (mAh) | link |
 | ---------- | ------------------------ | -------- | ----------- | -------------- | ---- |
@@ -275,6 +275,8 @@ Micro USB Amps | Experts Exchange](https://www.experts-exchange.com/questions/28
   - 260µA
 
   <img src="sensorbox/solar-power-manager/analysis/images/INAX180.png" alt="INAX180" width="50%" height="auto">
+
+  We used the INA in the final design, not realising the output is a milivolt per 100mA of charging/discharging. To fix this issue we added an OPAMP with 100x amplification to the connection between power manager and sensorbox. This needs to be added in a future iteration.
 
 # Polling rate
 

@@ -31,4 +31,6 @@
   * [Sensors]
 * [Project Methodology]
   * [Method]
-* [Zanzibar Travel Guide](Info/TravelGuide.md)
+* [Zanzibar Travel](Travel/README.md)
+  * [Travel Necessitites](Travel/TravelNecessities.md)
+  * [Travel Tips](Travel/TravelTips.md)

@@ -39,12 +39,12 @@ Now you can open the directory in Visual Studio Code and initialise the project.
 To build your project you can use the command palette in VSCode or use the shortcut `ctrl+alt+b` for Windows or `ctrl+option+b` for Mac. Normally you only get one warning about UART which can be ignored. If the projects builds without any problems you can try to flash the program to the sensorboard using `ctrl+alt+u` for Windows or `ctrl+option+u` for Mac. Make sure you enable the bootloader on the board by pressing the boot + enable button while uploading, this can be finicky at first... 
 
 ## TTN
-[RFM95](resources/RFM95_96_97_98W.pdf)
-[Lora](<resources/LoRa Modules V1.0.pdf>)
+[RFM95](sensorbox/sensor-box/sensors/resources/RFM95_96_97_98W.pdf)
+[Lora](<sensorbox/sensor-box/sensors/resources/LoRa Modules V1.0.pdf>)
 
 ### registration on the things network
 
- <img src="resources/TTN.png" alt="config" width="50%" height="auto">
+ <img src="sensorbox/sensor-box/sensors/resources/TTN.png" alt="config" width="50%" height="auto">
 
 - Make an account on the things network
 - Search for ttn console here you can find all off your applications 

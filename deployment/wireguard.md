@@ -1,4 +1,8 @@
 # WireGuard
+
+## Why we need WireGuard
+We use WireGuard for set up a secure vpn tunnel between devices. In this case we use WireGuard for the communication between the gateways and a server/VM. 
+
 ## Why WireGuard
 - Speed: WireGuard is generally faster than OpenVPN due to the efficient and modern cryptography it uses. This results in lower latency and higher throughput speeds.
 - Efficiency: WireGuard is lightweight and requires fewer resources, leading to better performance, especially on less powerful hardware.
@@ -6,10 +10,9 @@
 - Kernel Integration: WireGuard is integrated into the Linux kernel, making it easier to install and use on Linux systems.
 - Encrypted point to point connection between VM and gateway.  
 
-### Why we need WireGuard
-We use WireGuard for set up a secure vpn tunnel between devices. In this case we use WireGuard for the communication between the gateways and a server/VM. 
 
 ## WGeasy 
+
 ### The Utility of WG-Easy in Our Project
 WG-Easy is an invaluable tool for simplifying the management of WireGuard VPN servers.  In our project, we leverage the WG-Easy API to enhance our custom web user interface, resulting in a streamlined and user-friendly experience for managing our WireGuard.
 
@@ -36,8 +39,8 @@ This section outlines how to integrate WG-Easy's API with your custom web interf
 - Basic understanding of API calls and web development
 - Open ports 51820 (udp) en 51821 (tcp)
 
-## Steps:
-1. Setup WG-easy:
+## Setup:
+### 1. Setup WG-easy:
 Use the [documentation](https://github.com/wg-easy/wg-easy/blob/master/README.md) to run WG-Easy. 
 
 Requirements
@@ -48,7 +51,7 @@ We do not use the interface of wg easy directly because it raises some security 
 
 We use fastAPi to create routes that we can call at the frontend, which in turn calls the wg-easy api. Fast api works like a middleware. If we didn't do it this way we would run into problems with CORS. Besides, this is also clearer and easier to work with. 
 
-2. Configure Server A (frontend dashboard):
+### 2. Configure Server A (frontend dashboard)
 
 Within the interface on the dashboard, create a new "Client" by just entering the name of the new gateway. The name can't be longer than 15 characters. Now you can see the IP address, the name and the gateway ID. 
 

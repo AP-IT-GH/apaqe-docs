@@ -13,7 +13,7 @@
     * [Mock Data Generator](backend/sensor-bridge/mock-data-generator.md)
   * [Authentication]
   * [Notification]
-* [AI Development]
+* [Anomaly Detection](anomaly-detection/README.md)
 * [Deployment](deployment/README.md)
   * [WireGaurd](deployment/wireguard.md)
   * [Ansible](deployment/ansible.md)

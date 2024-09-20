@@ -20,7 +20,7 @@
   * [Ansible](deployment/ansible.md)
   * [Containerisation]
   * [Monitoring](deployment/monitoring.md)
-  * [Gateway configuration]
+  * [Gateway configuration](deployment/gateway.md)
   * [How to deploy]
 * [SensorBox](sensorbox/README.md)
   * [Solar Power Manager]

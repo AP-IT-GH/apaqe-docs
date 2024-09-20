@@ -1,36 +1,36 @@
 # Gateway Installation
 
-## Important notices
+# Important notices
 
 There are a couple of things you should not do when the board is powered, as they may break the board.
 - Plug / unplug any cable, including USB
 - Leaving the LoRaWAN antenna cables unattached
 
 
-## Glossary
+# Glossary
 
 - **Ansible**, Configuration automation tool
 - **RTL433**, Software for listening to the weatherstation packets
 - **UFW**, Linux firewall
 - **Wireguard**, VPN software
 
-## Installation
+# Installation
 
-### 1. Preparing the raspberry pi board
+## Preparing the Raspberry Pi board
 
 We start with placing the compute module on the gateway board, we then place the batteries (ICR18650-26J) for the UPS on the board (take care of orientation!) and a CR2032 battery for the clock on the back of the board.
 
-If not sure look on the wiki site of this board [CM4-POE-UPS-BASE - Waveshare Wiki](https://www.waveshare.com/wiki/CM4-POE-UPS-BASE). You may then provide the board of power with either a dc powersupply or with POE. After these steps on should flip the boot switch to on. ![bootswitch](bootswitch.png)
+If not sure look on the wiki site of this board [CM4-POE-UPS-BASE - Waveshare Wiki](https://www.waveshare.com/wiki/CM4-POE-UPS-BASE). You may then provide the board of power with either a dc powersupply or with POE. After these steps on should flip the boot switch to on. 
 
-To flash an os on the board we use [Rpiboot](https://www.waveshare.com/w/upload/f/f3/Rpiboot_setup.zip) from waveshare. After downloading, unzipping and installing this program you can plug a usb cable from your computer to the rapsberry pi board. Then you switch the slider to power the board. After this you run Rpiboot. We then proceed using the Raspberry Pi Imager which can be downloaded from the official raspberry pi site: [https://www.raspberrypi.com/software/](https://www.raspberrypi.com/software/). The project is made for the following OS choice: Raspberry Pi OS Lite (64-bit). You know select the compute module and click on the settings icon in the down right corner, here we set a hostname, enable SSH and change the user credentials.
+To flash an os on the board we use [RPiboot](https://www.waveshare.com/w/upload/f/f3/Rpiboot_setup.zip) from waveshare. After downloading, unzipping and installing this program you can plug a usb cable from your computer to the rapsberry Pi board. Then you switch the slider to power the board. After this you run Rpiboot. We then proceed using the Raspberry Pi Imager which can be downloaded from the official Raspberry Pi site: [https://www.Raspberrypi.com/software/](https://www.Raspberrypi.com/software/). The project is made for the following OS choice: Raspberry Pi OS Lite (64-bit). You know select the compute module and click on the settings icon in the down right corner, here we set a hostname, enable SSH and change the user credentials.
 Next you click on write and wait until it is finished. When its finished you can unplug the usb-c connection and power it off. Then you turn the boot switch back to its original position.
 
-Now we need to put the pi on a wired network with DHCP so it automaticly gets an ip address.
+Now we need to put the Pi on a wired network with DHCP so it automaticly gets an ip address.
 It is advisee to setup this ip staticly on the first ssh session.
 
-After these settings your Raspberry pi compute board should have a working base setup and should work when powered by POE.
+After these settings your Raspberry Pi compute board should have a working base setup and should work when powered by POE.
 
-### 2. cloning the repo
+### 2. Cloning the repo
 
 Because we only need one folder in the infrastructure repo and the repo is really big, we will only copy that folder to save some time.
 

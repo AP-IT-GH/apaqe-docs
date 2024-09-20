@@ -20,7 +20,7 @@
   * [WireGaurd]
   * [Containerisation]
   * [Monitoring]
-  * [Gateway configuration](Deployment/Gateway.md)
+  * [Gateway configuration](deployment/gateway.md)
   * [How to deploy]
 * [SensorBox](sensorbox/README.md)
   * [Solar Power Manager]

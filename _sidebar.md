@@ -16,10 +16,10 @@
   * [Notification]
 * [AI Development]
 * [Deployment](deployment/README.md)
-  * [Ansible](deployment/Ansible.md)
+  * [Ansible](deployment/ansible.md)
   * [WireGaurd]
   * [Containerisation]
-  * [Monitoring](deployment/Monitoring.md)
+  * [Monitoring](deployment/monitoring.md)
   * [Gateway configuration]
   * [How to deploy]
 * [SensorBox](sensorbox/README.md)

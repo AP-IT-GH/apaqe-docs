@@ -6,9 +6,8 @@
 * [Backend](backend/README.md)
   * [API](backend/api-readme.md)
   * [Database]
-    * [InfluxDB]
     * [PostgrSQL](backend/database/postgres.md)
-  * [Mosquitto]
+    * [InfluxDB](backend/database/influx.md)
   * [Sensor Bridge](backend/sensor-bridge/README.md)
     * [Mock Data Generator](backend/sensor-bridge/mock-data-generator.md)
   * [Authentication]

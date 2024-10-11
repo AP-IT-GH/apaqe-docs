@@ -23,7 +23,6 @@
   * [Gateway configuration](deployment/gateway.md)
   * [Monitoring]
   * [CI/CD Pipeline](deployment/cicd.md)
-  * [Gateway configuration]
   * [How to deploy](deployment/how-to-deploy.md)
 * [SensorBox](sensorbox/README.md)
   * [Solar Power Manager](sensorbox/solar-power-manager/README.md)

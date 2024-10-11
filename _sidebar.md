@@ -21,7 +21,7 @@
   * [Containerisation]
   * [Monitoring]
   * [Gateway configuration]
-  * [How to deploy](deployment/howToDeploy.md)
+  * [How to deploy](deployment/how-to-deploy.md)
 * [SensorBox](sensorbox/README.md)
   * [Solar Power Manager]
    * [Analysis]

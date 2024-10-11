@@ -1,6 +1,6 @@
 # Travel Assistance
 
-Welcome to the Travel Assistance section! This guide is designed to prepare you for an unforgettable experience in Zanzibar. We understand that traveling to Africa can sometimes feel daunting, especially if it's your first time. Our goal with this document is to ease any skepticism or concerns you may have and provide you with the information you need for a smooth and enjoyable stay.
+Welcome to the Travel Assistance section! This guide is designed to prepare you for an unforgettable experience in Zanzibar. We understand that traveling to Africa can sometimes feel daunting, especially if it's your first time. Our goal with this document is to ease any doubts or concerns you may have and provide you with the information you need for a smooth and enjoyable stay.
 
 ## What to Expect in Zanzibar
 

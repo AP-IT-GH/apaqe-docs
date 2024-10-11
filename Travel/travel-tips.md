@@ -1,4 +1,4 @@
-# TravelTips
+# Travel Tips
 
 These are tips and information to help you prepare for your stay in Zanzibar.
 
@@ -44,7 +44,7 @@ It is also optional to reserver and order your foor in advance so that it will t
 * **Safari**: Food + transport + guide: $300-400 (high season $400) per person.
 * **Spice Tour**: Food + transport + guide: $12-15 per person.
 
-### Popular but more cost for what you get
+### Popular but more cost for what you get (Tourist Traps)
 
 * Jozani Forest (monkeys)
 * Prison Island (turtles) + beach banks

@@ -32,5 +32,5 @@
 * [Project Methodology]
   * [Method]
 * [Zanzibar Travel](Travel/README.md)
-  * [Travel Necessitites](Travel/TravelNecessities.md)
-  * [Travel Tips](Travel/TravelTips.md)
+  * [Travel Necessitites](Travel/travel-necessities.md)
+  * [Travel Tips](Travel/travel-tips.md)

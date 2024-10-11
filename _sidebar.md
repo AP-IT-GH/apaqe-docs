@@ -20,7 +20,7 @@
   * [WireGaurd]
   * [Containerisation]
   * [Monitoring]
-  * [CI/CD Pipeline](deployment/CICD.md)
+  * [CI/CD Pipeline](deployment/cicd.md)
   * [Gateway configuration]
   * [How to deploy]
 * [SensorBox](sensorbox/README.md)

@@ -6,7 +6,7 @@
 * [Backend](backend/README.md)
   * [API]
   * [Database]
-    * [InfluxDB](influx/README.md)
+    * [InfluxDB](backend/database/influx.md)
     * [PostgrSQL]
   * [Mosquitto]
   * [SensorMonitor]

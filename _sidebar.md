@@ -4,6 +4,8 @@
   * [Application]
   * [Authentication]
 * [Backend](backend/README.md)
+  * [Traefik](backend/traefik.md)
+  * [Authentication](backend/authentication.md)
   * [API](backend/api-readme.md)
   * [Database]
     * [PostgrSQL](backend/database/postgres.md)

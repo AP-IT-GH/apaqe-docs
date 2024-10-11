@@ -34,3 +34,6 @@
   * [Reflection Moments](project-methodology/reflection-moments.md)
   * [Keys to Effective Teamwork](project-methodology/effective-teamwork.md)
   * [Lessons from Mistakes](project-methodology/lessons-learned.md)
+* [Zanzibar Travel](travel/README.md)
+  * [Travel Necessitites](travel/travel-necessities.md)
+  * [Travel Tips](travel/travel-tips.md)
